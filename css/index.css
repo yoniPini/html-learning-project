@@ -1,2 +1,14 @@
 .div-header {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-self: center;
+  padding: 10px;
+}
+
+.menu {
+  font-size: 25px;
+  color: #333;
+  padding: 10px;
+  cursor: pointer;
 }
