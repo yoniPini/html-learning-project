@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Yonatan Pinchas" />
+    <meta name="description" content="An HTML project for learning" />
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../../css/form2.css" />
+    <title>Yonatan's Landing Page</title>
+  </head>
+  <body>
+    <form action="https://httpbin.org/post" method="post">
+      <div class="form-layout">
+        <div class="lables-div">
+          <div class="lables-div">
+            <label for="Username">Username:</label>
+            <br />
+            <br />
+            <label for="email">Email:</label>
+            <br />
+            <br />
+            <label for="password">Password</label>
+          </div>
+        </div>
+        <div class="inputs-div">
+          <input type="text" id="Username" name="Username" required />
+          <br />
+          <br />
+          <input type="text" id="email" name="email" required />
+          <br />
+          <br />
+          <input type="password" id="password" name="password" required />
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <input type="submit" value="Post" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
