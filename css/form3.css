@@ -1,0 +1,19 @@
+fieldset {
+  border: 2px solid black;
+  display: inline-block;
+}
+
+legend {
+  font-family: "Courier New";
+}
+
+.form-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 15px;
+}
+
+div {
+  display: inline-block;
+}

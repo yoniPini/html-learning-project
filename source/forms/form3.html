@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Yonatan Pinchas" />
+    <meta name="description" content="An HTML project for learning" />
+    <link rel="stylesheet" href="../../css/forms-general.css" />
+    <link rel="stylesheet" href="../../css/form3.css" />
+    <title>Yonatan's Landing Page</title>
+  </head>
+  <body>
+    <form action="https://httpbin.org/post" method="post">
+      <div class="form-layout">
+        <fieldset>
+          <legend>Personal Info</legend>
+          <div>
+            <label for="full-name">Full Name: </label>
+            <br />
+            <label for="gender">Gender: </label>
+            <br />
+            <label for="age">Age: </label>
+            <br />
+            <label for="birth-date">Date of Birth:</label>
+          </div>
+          <div>
+            <input name="full-name" id="full-name" type="text" required />
+            <br />
+            <select name="gender" id="gender">
+              <option value="male">Male</option>
+              <option value="female" selected>Female</option>
+              <option value="no-gender">Prefer not to say</option>
+            </select>
+            <br />
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="18"
+              max="40"
+              title="18-40 inclusive"
+              required
+            />
+            <br />
+            <input type="date" name="birth-date" id="birth-date" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Background</legend>
+          <div>
+            <label>Years of study:</label>
+            <br />
+            <div>
+              <label for="no-level">
+                <input
+                  name="education-level"
+                  id="no-level"
+                  type="radio"
+                  value="Less than 12"
+                />Less than 12 Years
+              </label>
+              <label for="hs-level">
+                <input
+                  name="education-level"
+                  id="hs-level"
+                  type="radio"
+                  value="High-School"
+                />12 Years
+              </label>
+              <label for="d-level">
+                <input
+                  name="education-level"
+                  id="d-level"
+                  type="radio"
+                  value="Degree"
+                />Over 12 Years
+              </label>
+            </div>
+            <br />
+            <br />
+            <label>Do you have a degree?</label>
+            <br />
+
+            <div>
+              <label for="no-degree">
+                <input
+                  type="radio"
+                  name="has-degree"
+                  id="no-degree"
+                  value="No-degree"
+                />No
+              </label>
+              <label for="bachelor">
+                <input
+                  type="radio"
+                  name="has-degree"
+                  id="bachelor"
+                  value="Bachelor"
+                />Bachelors
+              </label>
+              <label for="master">
+                <input
+                  type="radio"
+                  name="has-degree"
+                  id="master"
+                  value="Master"
+                />Master
+              </label>
+              <label for="doctor">
+                <input
+                  type="radio"
+                  name="has-degree"
+                  id="doctor"
+                  value="Doctor"
+                />Doctor
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <br />
+      <br />
+      <input type="submit" value="Post" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
