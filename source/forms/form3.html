@@ -56,6 +56,7 @@
                   id="no-level"
                   type="radio"
                   value="Less than 12"
+                  required
                 />Less than 12 Years
               </label>
               <label for="hs-level">
@@ -115,6 +116,91 @@
               </label>
             </div>
           </div>
+        </fieldset>
+        <fieldset>
+          <legend>Skills & Technology</legend>
+          <div>
+            <label>What skill do you posses?</label>
+            <br />
+            <label for="python"
+              ><input
+                type="checkbox"
+                value="Python"
+                name="python"
+                id="python"
+              />
+              Python
+            </label>
+            <label for="pycharm"
+              ><input type="checkbox" value="JS/TS" name="js/ts" id="js/ts" />
+              JavaScript/TypeScript
+            </label>
+            <label for="java/c#"
+              ><input
+                type="checkbox"
+                value="Java/C#"
+                name="java/c#"
+                id="java/c#"
+              />
+              Java/C#
+            </label>
+            <label for="c/c++"
+              ><input type="checkbox" value="C/C++" name="c/c++" id="c/c++" />
+              C/C++
+            </label>
+          </div>
+          <br />
+          <br />
+          <div>
+            <label>What Technologies are you familiar with?</label>
+            <br />
+            <label for="nodeJS"
+              ><input
+                type="checkbox"
+                value="NodeJS"
+                name="nodeJS"
+                id="nodeJS"
+              />
+              NodeJS
+            </label>
+            <label for="pycharm"
+              ><input
+                type="checkbox"
+                value="Pycharm"
+                name="pycharm"
+                id="pycharm"
+              />
+              Pycharm
+            </label>
+            <label for="vs-code"
+              ><input
+                type="checkbox"
+                value="vs-code"
+                name="vs-code"
+                id="vs-code"
+              />
+              Visual Studio Code
+            </label>
+            <label for="react"
+              ><input type="checkbox" value="React" name="react" id="react" />
+              React
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Resume & Details</legend>
+          <input type="file" value="Resume" required />
+          <br />
+          <br />
+          <label for="message"
+            >Add extra details about yourself (Optional):</label
+          >
+          <br />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Enter some text here"
+          ></textarea>
         </fieldset>
       </div>
       <br />
