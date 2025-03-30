@@ -90,3 +90,31 @@ section img {
   width: 400px;
   margin-right: 40px;
 }
+
+.projects-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.project-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.project-img {
+  width: 200px;
+  height: 180px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 20px;
+  transition: width 1s, height 1s;
+}
+
+.project-img:hover {
+  width: 220px;
+  height: 198px;
+  box-shadow: 5px 5px 10px black;
+}
